@@ -1,0 +1,37 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "First Test",
+            "author": "Xaydan",
+            "body": "Test post",
+            "date": "2026-08-02T13:25:28-04:00",
+            "comments": []
+        },
+        {
+            "id": 2,
+            "title": "Additions",
+            "author": "Xaydan",
+            "body": "- Add additional families with their own passwords \n- Make it more aesthetically pleasing \n- Lock people so they can’t be accidentally deleted \n- add a place of birth section\n- fix the children of divorce, for example when i made a child parents divorced and added a new spouse, it would glitch and make the child go completely off screen to the right\n- make divorced spouses smaller\n\nMemory Capsules\n\nEach person can have:\n\n* Voice recordings\n* Favorite songs\n* Videos\n* Recipes\n* Handwriting samples\n* Personality traits\n* Quotes\n*Hobbies\n\nAdd events\nBasically events with a date, such that it can later be added to a global timeline that shows events in order",
+            "date": "2026-08-02T13:33:35-04:00",
+            "comments": []
+        },
+        {
+            "id": 3,
+            "title": "addition",
+            "author": "Xaydan",
+            "body": "A checkbox for the deceased that hides the date of death.",
+            "date": "2026-08-02T18:35:01-04:00",
+            "comments": []
+        },
+        {
+            "id": 4,
+            "title": "addition",
+            "author": "Xaydan",
+            "body": "Under the connections area it says \"Partners\" make it say partner unless that person has had multiple.",
+            "date": "2026-08-05T23:47:41-04:00",
+            "comments": []
+        }
+    ],
+    "nextId": 5
+}

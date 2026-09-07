@@ -1,0 +1,251 @@
+{
+    "title": "The Khan Family",
+    "subtitle": "a quiet record of who belongs to whom",
+    "people": [
+        {
+            "id": 1,
+            "name": "Syed Mohammed Haider",
+            "photo": "/uploads/img_20260801_202311_9127b0b9.jpeg",
+            "parents": [],
+            "partners": [
+                {
+                    "id": 2,
+                    "status": "married"
+                }
+            ],
+            "dob": "1975-07-13",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "Ottawa",
+            "bio": "",
+            "gallery": [
+                "/uploads/img_20260801_202215_c4c63310.jpeg"
+            ],
+            "birthplace": "",
+            "locked": false,
+            "nickname": "Mo",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": [
+                {
+                    "kind": "married",
+                    "name": "Ottawa Orleans",
+                    "year": "2000",
+                    "note": "",
+                    "lat": 45.46536540000000314876160700805485248565673828125,
+                    "lng": -75.5035342999999983248926582746207714080810546875
+                }
+            ],
+            "deceased": false,
+            "linkedFamily": {
+                "slug": "main",
+                "personId": 41
+            }
+        },
+        {
+            "id": 2,
+            "name": "Seema Khan Haider",
+            "photo": "/uploads/img_20260802_044254_cd99ee9c.jpeg",
+            "parents": [
+                10,
+                11
+            ],
+            "partners": [
+                {
+                    "id": 1,
+                    "status": "married"
+                }
+            ],
+            "dob": "1975-07-21",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "deceased": false,
+            "nickname": "",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": [
+                {
+                    "kind": "married",
+                    "name": "Ottawa Orleans",
+                    "year": "2000",
+                    "note": "",
+                    "lat": 45.46536540000000314876160700805485248565673828125,
+                    "lng": -75.5035342999999983248926582746207714080810546875
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Zayna",
+            "photo": "/uploads/img_20260802_044321_c59f65a2.jpeg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [],
+            "dob": "2002-07-03",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 4,
+            "name": "Kayan",
+            "photo": "/uploads/img_20260802_044340_6693fae2.jpeg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [],
+            "dob": "2004-11-08",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 5,
+            "name": "Xaydan",
+            "photo": "/uploads/img_20260802_044410_6697f882.jpeg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [],
+            "dob": "2007-04-21",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "nickname": "",
+            "locked": false,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            }
+        },
+        {
+            "id": 6,
+            "name": "Eysa",
+            "photo": "/uploads/img_20260802_044439_54a16eb6.jpeg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [],
+            "dob": "2010-12-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 10,
+            "name": "Rodaba Khan",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 11,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 11,
+            "name": "Hafiz Khan",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 10,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        }
+    ],
+    "events": [],
+    "nextId": 12
+}
