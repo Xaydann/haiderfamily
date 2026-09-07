@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Forum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="brand">
+    <div class="mark">Family Forum</div>
+    <div class="sub">stories, updates, and news for the family</div>
+  </div>
+  <div class="navlinks">
+    <a href="index.html">Tree</a>
+    <a href="forum.html" class="active">Forum</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="map.html">Map</a>
+  </div>
+  <div class="controls">
+    <button class="iconbtn search-trigger" type="button" title="Search people (or just start typing)" aria-label="Search people">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    </button>
+    <button class="iconbtn theme-toggle" type="button" title="Toggle dark mode"></button>
+    <div class="family-switch" id="familySwitch">
+      <button class="family-pill" id="familyPillBtn" type="button">
+        <span id="familyPillLabel">Family Tree</span>
+        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="family-menu" id="familyMenu"></div>
+    </div>
+    <div class="auth-pill" id="authPill"><span class="dot"></span><span class="label">View only</span></div>
+    <button class="btn-ghost" id="signBtn">Sign in</button>
+  </div>
+</div>
+
+<div class="forum-wrap" id="forumWrap">
+  <!-- Locked state -->
+  <div class="forum-locked" id="forumLocked" style="display:none;">
+    <h2>This forum is private</h2>
+    <p>Sign in with the family password to read and post.</p>
+    <button class="btn-primary" id="lockedSignIn" style="margin:16px auto 0;">Sign in</button>
+  </div>
+
+  <!-- List view -->
+  <div id="listView" style="display:none;">
+    <div class="forum-header">
+      <h1>Latest posts</h1>
+      <button class="btn-primary" id="newPostBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        <span class="btn-label">New post</span>
+      </button>
+    </div>
+    <div id="postList"></div>
+    <div class="empty-forum" id="emptyForum" style="display:none;">No posts yet — be the first to share something.</div>
+  </div>
+
+  <!-- Single post view -->
+  <div id="postView" style="display:none;">
+    <button class="back-link" id="backToList">&larr; Back to all posts</button>
+    <div class="post-full" id="postFull"></div>
+  </div>
+</div>
+
+<!-- New post modal -->
+<div class="overlay" id="postOverlay">
+  <div class="modal" style="width:520px;">
+    <h3>New post</h3>
+    <p class="subhead">Share an update, story, or memory with the family.</p>
+    <div class="error-msg" id="postError"></div>
+    <div class="field">
+      <label>Your name</label>
+      <input type="text" id="postAuthor" placeholder="e.g. Grandma Rosa">
+    </div>
+    <div class="field">
+      <label>Title</label>
+      <input type="text" id="postTitle" placeholder="What's this about?">
+    </div>
+    <div class="field">
+      <label>Message</label>
+      <textarea id="postBody" style="min-height:160px;" placeholder="Write your post..."></textarea>
+    </div>
+    <div class="modal-actions">
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="postCancel">Cancel</button>
+        <button class="btn-primary" id="postSubmit">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login modal (shared) -->
+<div class="overlay" id="loginOverlay">
+  <div class="modal" style="width:340px;">
+    <h3>Sign in</h3>
+    <p class="subhead">Enter the family password to read and post on the forum.</p>
+    <div class="error-msg" id="loginError"></div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" id="loginPassword" placeholder="Family password">
+    </div>
+    <div class="modal-actions">
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="loginCancel">Cancel</button>
+        <button class="btn-primary" id="loginSubmit">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/auth-shared.js"></script>
+<div id="searchHost"></div>
+<script src="js/forum.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

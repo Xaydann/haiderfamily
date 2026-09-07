@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Tree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  html,body{ overflow:hidden; height:100%; }
+  body{ display:flex; flex-direction:column; }
+</style>
+</head>
+<body>
+
+<!-- ============ Top nav ============ -->
+<div class="topnav">
+  <div class="brand">
+    <div class="mark" id="titleMark">Family Tree</div>
+    <div class="sub" id="subtitleMark">a quiet record of who belongs to whom</div>
+  </div>
+  <div class="navlinks">
+    <a href="index.html" class="active">Tree</a>
+    <a href="forum.html">Forum</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="map.html">Map</a>
+  </div>
+  <div class="controls">
+    <button class="iconbtn search-trigger" type="button" title="Search people (or just start typing)" aria-label="Search people">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    </button>
+    <button class="iconbtn theme-toggle" type="button" title="Toggle dark mode"></button>
+    <div class="family-switch" id="familySwitch">
+      <button class="family-pill" id="familyPillBtn" type="button">
+        <span id="familyPillLabel">Family Tree</span>
+        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="family-menu" id="familyMenu"></div>
+    </div>
+    <div class="segmented" id="modeToggle">
+      <button data-mode="tree" class="active" title="Tree view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V13"/><path d="M12 13L6 6"/><path d="M12 13L18 6"/></svg>
+      </button>
+      <button data-mode="circle" title="Circle view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+          <circle cx="12" cy="12" r="8.5"/>
+          <circle cx="12" cy="3.5" r="1.6" fill="currentColor" stroke="none"/>
+          <circle cx="19.9" cy="16.75" r="1.6" fill="currentColor" stroke="none"/>
+          <circle cx="4.1" cy="16.75" r="1.6" fill="currentColor" stroke="none"/>
+        </svg>
+      </button>
+      <button data-mode="constellation" title="Constellation view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M5 17L9.5 10.5L15 13.5L19.5 6.5" opacity="0.5"/>
+          <circle cx="5" cy="17" r="1.6" fill="currentColor" stroke="none"/>
+          <circle cx="9.5" cy="10.5" r="2.1" fill="currentColor" stroke="none"/>
+          <circle cx="15" cy="13.5" r="1.4" fill="currentColor" stroke="none"/>
+          <circle cx="19.5" cy="6.5" r="1.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </button>
+    </div>
+    <button class="iconbtn" id="resetView" title="Reset view">⤾</button>
+    <button class="btn-primary" id="addPersonBtn" style="display:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      <span class="btn-label">Add person</span>
+    </button>
+    <div class="auth-pill" id="authPill"><span class="dot"></span><span class="label">View only</span></div>
+    <button class="btn-ghost" id="signBtn">Sign in</button>
+  </div>
+</div>
+
+<div class="app">
+  <div class="viewport" id="viewport">
+    <div id="threeHost"></div>
+    <div id="stage">
+      <svg id="lines"></svg>
+      <div id="nodes"></div>
+    </div>
+
+    <div class="empty-state" id="emptyState">
+      <div class="circle" id="emptyAdd">+</div>
+      <h2 id="emptyTitle">Start your family tree</h2>
+      <p id="emptyText">Add the first person to begin. From there, use the icons on each card to branch out.</p>
+    </div>
+
+    <div class="legend" id="legend">
+      <div class="row"><span class="swatch"></span> Married</div>
+      <div class="row"><span class="swatch partner"></span> Partner</div>
+      <div class="row"><span class="swatch divorced"></span> Divorced / separated</div>
+    </div>
+
+    <div class="panctl" id="panCtl">
+      <button class="iconbtn pan-btn pan-up" data-dir="up" title="Pan up" aria-label="Pan up">↑</button>
+      <button class="iconbtn pan-btn pan-left" data-dir="left" title="Pan left" aria-label="Pan left">←</button>
+      <button class="iconbtn pan-btn pan-right" data-dir="right" title="Pan right" aria-label="Pan right">→</button>
+      <button class="iconbtn pan-btn pan-down" data-dir="down" title="Pan down" aria-label="Pan down">↓</button>
+    </div>
+
+    <div class="constellation-hint"><b>Arrows</b> fly · drag to look around · <b>click</b> a star to select &amp; orbit it, again to open · <b>Esc</b> deselect · just type to search</div>
+    <div class="zoomctl">
+      <button class="iconbtn" id="zoomIn">+</button>
+      <button class="iconbtn" id="zoomOut">–</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Edit-person modal (edit mode only) ============ -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3 id="modalTitle">Add a person</h3>
+    <p class="subhead" id="modalSubhead"></p>
+    <div class="error-msg" id="modalError"></div>
+
+    <div class="field">
+      <label>Photo</label>
+      <div class="photo-row">
+        <div class="photo-preview" id="photoPreview">＋</div>
+        <div>
+          <button class="file-btn" id="photoBtn">Upload &amp; crop photo</button>
+          <input type="file" id="photoInput" accept="image/*" style="display:none;">
+        </div>
+      </div>
+    </div>
+
+    <div class="field row2">
+      <div>
+        <label>Name</label>
+        <input type="text" id="nameInput" placeholder="Full name" autocomplete="off">
+      </div>
+      <div>
+        <label>Nickname</label>
+        <input type="text" id="nicknameInput" placeholder="e.g. Bubs" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="field" id="connField" style="display:none;">
+      <label>Connections</label>
+      <div class="conn-list" id="connList"></div>
+    </div>
+
+    <div class="field" id="relationField">
+      <label>Relationship</label>
+      <div class="radio-group" id="relationGroup">
+        <label class="radio-opt" data-val="root"><input type="radio" name="relation" value="root">Not connected — new branch</label>
+        <label class="radio-opt" data-val="child"><input type="radio" name="relation" value="child">Child of someone in the tree</label>
+        <label class="radio-opt" data-val="partner"><input type="radio" name="relation" value="partner">Partner of someone in the tree</label>
+        <label class="radio-opt" data-val="parent"><input type="radio" name="relation" value="parent">Parent of someone in the tree</label>
+      </div>
+      <div class="pick-list" id="parentPick"></div>
+      <div class="pick-list" id="partnerPick"></div>
+      <div class="pick-list" id="childPick"></div>
+      <div class="hint" id="pickHint" style="display:none;"></div>
+    </div>
+
+    <div class="field" id="quickParentField" style="display:none;">
+      <label>Parents</label>
+      <div class="fixed-target" id="quickParentFixed"></div>
+      <div class="hint" id="quickParentHint">Optionally add a second parent:</div>
+      <div class="pick-list show" id="quickParentPick"></div>
+    </div>
+
+    <div class="field" id="statusField" style="display:none;">
+      <label>Status</label>
+      <select id="statusSelect">
+        <option value="married">Married</option>
+        <option value="partner">Partner</option>
+        <option value="divorced">Divorced / separated</option>
+      </select>
+    </div>
+
+    <div class="field" id="quickPartnerField" style="display:none;">
+      <label>Partner</label>
+      <div class="fixed-target" id="quickPartnerFixed"></div>
+    </div>
+
+    <!-- Follow-up: adding a partner to someone who already has children -->
+    <div class="field followup" id="alsoParentField" style="display:none;">
+      <div class="followup-q" id="alsoParentQ"></div>
+      <div class="pick-list show" id="alsoParentPick"></div>
+    </div>
+
+    <!-- Follow-up: adding a second parent to a child who already has one -->
+    <div class="field followup" id="alsoPartnerField" style="display:none;">
+      <label class="followup-toggle">
+        <input type="checkbox" id="alsoPartnerCheck" checked>
+        <span id="alsoPartnerQ"></span>
+      </label>
+      <select id="alsoPartnerStatus" style="margin-top:8px;">
+        <option value="married">Married</option>
+        <option value="partner">Partner</option>
+        <option value="divorced">Divorced / separated</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Date of birth</label>
+      <input type="date" id="dobInput">
+    </div>
+
+    <div class="field">
+      <label class="deceased-toggle">
+        <input type="checkbox" id="deceasedInput">
+        <span>Deceased</span>
+      </label>
+      <div id="dodWrap" style="display:none; margin-top:12px;">
+        <label>Passed away</label>
+        <input type="date" id="dodInput">
+      </div>
+    </div>
+
+    <div class="field row2">
+      <div>
+        <label>Place of birth</label>
+        <input type="text" id="birthplaceInput" placeholder="e.g. Lahore, Pakistan">
+      </div>
+      <div>
+        <label>Current location</label>
+        <input type="text" id="locationInput" placeholder="e.g. Ottawa, Canada">
+      </div>
+    </div>
+
+    <div class="field" id="linkedFamilyField">
+      <label>Their own family tree</label>
+      <div class="hint-sm" style="margin-bottom:7px;">If this person married in from another family on this site, link it here — their popup will offer a jump to that tree.</div>
+      <select id="linkedFamilySelect">
+        <option value="">Not linked</option>
+      </select>
+      <select id="linkedPersonSelect" style="display:none; margin-top:8px;">
+        <option value="">Loading people…</option>
+      </select>
+      <div class="hint-sm" id="linkedPersonHint" style="display:none; margin-top:6px;"></div>
+      <div id="editSpawnWrap" style="margin-top:10px;">
+        <button class="bio-spawn-btn" id="editSpawnBtn" type="button" style="margin:0;">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <span id="editSpawnLabel">Create a new family tree for this person</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Ethnicity</label>
+      <input type="text" id="ethnicityInput" placeholder="e.g. Irish, Filipino">
+    </div>
+
+    <div class="field">
+      <label>Bio</label>
+      <textarea id="bioInput" placeholder="A few lines about this person..."></textarea>
+    </div>
+
+    <div class="field">
+      <label>Photo gallery</label>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-add" id="galleryAddBtn">＋</div>
+      </div>
+      <input type="file" id="galleryInput" accept="image/*" style="display:none;">
+    </div>
+
+    <details class="section-group">
+      <summary>Memory capsule</summary>
+      <p class="hint-sm">Personal touches — only shown on their page if you add them.</p>
+
+      <div class="capsule-text-field">
+        <label>Personality traits</label>
+        <div class="tag-list" data-list="traits"></div>
+        <div class="tag-add-row"><input type="text" data-tag-input="traits" placeholder="e.g. Stubborn, generous, early riser"><button type="button" class="btn-ghost tag-add-btn" data-tag-add="traits">Add</button></div>
+      </div>
+      <div class="capsule-text-field">
+        <label>Quotes</label>
+        <div class="tag-list" data-list="quotes"></div>
+        <div class="tag-add-row"><input type="text" data-tag-input="quotes" placeholder="Something they always used to say"><button type="button" class="btn-ghost tag-add-btn" data-tag-add="quotes">Add</button></div>
+      </div>
+      <div class="capsule-text-field">
+        <label>Hobbies</label>
+        <div class="tag-list" data-list="hobbies"></div>
+        <div class="tag-add-row"><input type="text" data-tag-input="hobbies" placeholder="e.g. Gardening, chess, fishing"><button type="button" class="btn-ghost tag-add-btn" data-tag-add="hobbies">Add</button></div>
+      </div>
+      <div class="capsule-text-field">
+        <label>Favorite songs</label>
+        <div class="tag-list" data-list="songs"></div>
+        <div class="tag-add-row"><input type="text" data-tag-input="songs" placeholder="Song — Artist"><button type="button" class="btn-ghost tag-add-btn" data-tag-add="songs">Add</button></div>
+      </div>
+
+      <div class="capsule-file-field">
+        <label>Voice recordings</label>
+        <div class="file-list" data-list="voice"></div>
+        <button type="button" class="file-btn capsule-upload-btn" data-key="voice" data-accept="audio/*">Upload recording</button>
+      </div>
+      <div class="capsule-file-field">
+        <label>Videos</label>
+        <div class="file-list" data-list="videos"></div>
+        <button type="button" class="file-btn capsule-upload-btn" data-key="videos" data-accept="video/*">Upload video</button>
+      </div>
+      <div class="capsule-file-field">
+        <label>Recipes</label>
+        <div class="file-list" data-list="recipes"></div>
+        <button type="button" class="file-btn capsule-upload-btn" data-key="recipes" data-accept="image/*,application/pdf">Upload recipe</button>
+      </div>
+      <div class="capsule-file-field">
+        <label>Handwriting samples</label>
+        <div class="file-list" data-list="handwriting"></div>
+        <button type="button" class="file-btn capsule-upload-btn" data-key="handwriting" data-accept="image/*">Upload sample</button>
+      </div>
+      <div class="capsule-file-field">
+        <label>Other documents</label>
+        <div class="file-list" data-list="documents"></div>
+        <button type="button" class="file-btn capsule-upload-btn" data-key="documents" data-accept="*/*">Upload document</button>
+      </div>
+      <input type="file" id="capsuleFileInput" style="display:none;">
+    </details>
+
+    <details class="section-group" id="placesSection">
+      <summary>Places</summary>
+      <p class="hint-sm">Where they lived, married, worked, studied, or are buried — these appear on the family Map.</p>
+      <div class="places-list" id="placesList"></div>
+      <div class="place-add-row">
+        <div class="place-tabs" id="placeTabs" role="tablist">
+          <button type="button" class="place-tab active" data-kind="lived">Lived</button>
+          <button type="button" class="place-tab" data-kind="married">Married</button>
+          <button type="button" class="place-tab" data-kind="worked">Worked</button>
+          <button type="button" class="place-tab" data-kind="school">School</button>
+          <button type="button" class="place-tab" data-kind="buried" id="buriedTab" style="display:none;">Buried</button>
+        </div>
+        <input type="text" id="placeYearInput" placeholder="Year">
+        <input type="text" id="placeNameInput" placeholder="Place, e.g. Lahore, Pakistan">
+        <input type="text" id="placeNoteInput" placeholder="Note">
+        <div class="place-add-actions">
+          <button class="btn-ghost" id="placeLookupBtn" type="button">Find on map</button>
+          <span class="place-status" id="placeStatus"></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="section-group" id="eventsSection">
+      <summary>Life events</summary>
+      <p class="hint-sm">Dated moments worth remembering — these also show up on the family Timeline. Birth and passing dates are added automatically.</p>
+      <div class="events-list" id="eventsList"></div>
+      <div class="event-add-row">
+        <input type="text" id="eventTitleInput" placeholder="Event title (e.g. Graduated college)">
+        <input type="date" id="eventDateInput">
+        <textarea id="eventDescInput" placeholder="Details" rows="2"></textarea>
+        <div class="event-place-row">
+          <input type="text" id="eventPlaceInput" placeholder="Where did it happen?">
+          <span class="place-status" id="eventPlaceStatus"></span>
+        </div>
+        <div class="hint-sm">Also happened to:</div>
+        <div class="pick-list show" id="eventSharedPick"></div>
+        <button class="btn-ghost" id="addEventBtn" type="button">Add event</button>
+      </div>
+    </details>
+
+    <div class="field">
+      <label class="lock-toggle" id="lockToggleLabel">
+        <input type="checkbox" id="lockInput">
+        <span>Lock this person <span class="hint-sm" style="display:inline;">— prevents accidental deletion</span></span>
+      </label>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-danger" id="deleteBtn" style="display:none;">Delete this person</button>
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="cancelBtn">Cancel</button>
+        <button class="btn-primary" id="saveBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ View-only bio modal (public) ============ -->
+<div class="overlay" id="bioOverlay">
+  <div class="modal bio-modal">
+    <div class="bio-head">
+      <div class="bio-avatar" id="bioAvatar"></div>
+      <div>
+        <h3 id="bioName">—</h3>
+        <div class="bio-nickname" id="bioNickname"></div>
+        <div class="bio-dates" id="bioDates"></div>
+      </div>
+    </div>
+    <div class="bio-facts" id="bioFacts"></div>
+    <div id="bioLinkWrap" style="display:none;">
+      <a class="bio-family-link" id="bioFamilyLink" href="#"></a>
+    </div>
+    <div id="bioSpawnWrap" style="display:none;">
+      <button class="bio-spawn-btn" id="bioSpawnBtn" type="button">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        <span id="bioSpawnLabel">Create a family tree for them</span>
+      </button>
+    </div>
+    <div id="bioConnWrap" style="display:none;">
+      <div class="bio-section-title">Connections</div>
+      <div class="bio-connections" id="bioConnections"></div>
+    </div>
+    <div id="bioTextWrap" style="display:none;">
+      <div class="bio-section-title">About</div>
+      <div id="bioText" style="font-size:13.5px; line-height:1.6; color:var(--ink);"></div>
+    </div>
+    <div id="bioGalleryWrap" style="display:none;">
+      <div class="bio-section-title">Gallery</div>
+      <div class="bio-gallery" id="bioGallery"></div>
+    </div>
+    <div id="bioEventsWrap" style="display:none;">
+      <div class="bio-section-title">Life events</div>
+      <div class="bio-events" id="bioEvents"></div>
+    </div>
+    <div id="bioCapsuleWrap" style="display:none;">
+      <div class="bio-section-title">Memory capsule</div>
+      <div class="bio-capsule" id="bioCapsule"></div>
+    </div>
+    <div class="modal-actions">
+      <div style="margin-left:auto;">
+        <button class="btn-ghost" id="bioCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Create-a-family modal ============ -->
+<div class="overlay" id="spawnOverlay">
+  <div class="modal" style="width:420px;">
+    <h3 id="spawnTitle">Create a family tree</h3>
+    <p class="subhead" id="spawnSubhead"></p>
+    <div class="error-msg" id="spawnError"></div>
+    <div class="field">
+      <label>Family name</label>
+      <input type="text" id="spawnName" placeholder="e.g. The Smith Family">
+    </div>
+    <div class="field">
+      <label>Short name (used in the web address)</label>
+      <input type="text" id="spawnSlug" placeholder="smith" pattern="[a-z0-9\-]+">
+    </div>
+    <div class="field">
+      <label>Password for that family</label>
+      <div class="spawn-pw-row">
+        <input type="text" id="spawnPassword" placeholder="at least 4 characters">
+        <button class="btn-ghost" id="spawnGenPw" type="button">Generate</button>
+      </div>
+      <div class="hint-sm" id="spawnPwHint">You choose this — write it down, it's how that family signs in and it can't be recovered (only reset).</div>
+    </div>
+    <div class="field">
+      <label>What to bring across</label>
+      <div class="radio-group" id="spawnModeGroup">
+        <label class="radio-opt checked" data-val="lineage"><input type="radio" name="spawnmode" value="lineage" checked>Their whole lineage — ancestors, descendants and partners</label>
+        <label class="radio-opt" data-val="person"><input type="radio" name="spawnmode" value="person">Just this person, as a fresh start</label>
+      </div>
+      <div class="hint-sm" id="spawnCount"></div>
+    </div>
+    <div class="modal-actions">
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="spawnCancel">Cancel</button>
+        <button class="btn-primary" id="spawnSubmit">Create tree</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Crop modal ============ -->
+<div class="overlay" id="cropOverlay">
+  <div class="modal" style="width:480px;">
+    <h3>Crop photo</h3>
+    <p class="subhead">Drag to reposition, use the corners to resize the crop area.</p>
+    <div class="crop-shape-toggle">
+      <button class="btn-ghost" id="cropSquare" type="button">Square</button>
+      <button class="btn-ghost" id="cropFree" type="button">Free</button>
+    </div>
+    <div class="crop-wrap"><img id="cropImage"></div>
+    <div class="modal-actions">
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="cropCancel">Cancel</button>
+        <button class="btn-primary" id="cropConfirm">Use this crop</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Lightbox ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="">
+</div>
+
+<!-- ============ Login modal (shared) ============ -->
+<div class="overlay" id="loginOverlay">
+  <div class="modal" style="width:340px;">
+    <h3>Sign in to edit</h3>
+    <p class="subhead">Enter the family password to add, edit, or crop photos.</p>
+    <div class="error-msg" id="loginError"></div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" id="loginPassword" placeholder="Family password">
+    </div>
+    <div class="modal-actions">
+      <div style="display:flex; gap:8px; margin-left:auto;">
+        <button class="btn-ghost" id="loginCancel">Cancel</button>
+        <button class="btn-primary" id="loginSubmit">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/auth-shared.js"></script>
+<div id="searchHost"></div>
+<script src="js/constellation3d.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

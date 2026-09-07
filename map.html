@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+<style>html,body{ overflow:hidden; height:100%; } body{ display:flex; flex-direction:column; }</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div class="brand">
+    <div class="mark">Family Map</div>
+    <div class="sub">everywhere the family has been</div>
+  </div>
+  <div class="navlinks">
+    <a href="index.html">Tree</a>
+    <a href="forum.html">Forum</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="map.html" class="active">Map</a>
+  </div>
+  <div class="controls">
+    <button class="iconbtn search-trigger" type="button" title="Search people (or just start typing)" aria-label="Search people">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    </button>
+    <button class="iconbtn theme-toggle" type="button" title="Toggle dark mode"></button>
+    <div class="family-switch" id="familySwitch">
+      <button class="family-pill" id="familyPillBtn" type="button">
+        <span id="familyPillLabel">Family Tree</span>
+        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="family-menu" id="familyMenu"></div>
+    </div>
+  </div>
+</div>
+
+<div class="map-app">
+  <div id="map"></div>
+  <div class="map-filters" id="mapFilters">
+    <div class="mf-title">Show</div>
+    <label class="mf-row"><input type="checkbox" data-kind="lived" checked><span class="mf-dot" style="background:#2f4a3c"></span>Lived</label>
+    <label class="mf-row"><input type="checkbox" data-kind="married" checked><span class="mf-dot" style="background:#8c6a4f"></span>Married</label>
+    <label class="mf-row"><input type="checkbox" data-kind="worked" checked><span class="mf-dot" style="background:#5a6e8c"></span>Worked</label>
+    <label class="mf-row"><input type="checkbox" data-kind="school" checked><span class="mf-dot" style="background:#7a5a7c"></span>School</label>
+    <label class="mf-row"><input type="checkbox" data-kind="buried" checked><span class="mf-dot" style="background:#6b6f66"></span>Buried</label>
+    <label class="mf-row"><input type="checkbox" data-kind="event" checked><span class="mf-dot" style="background:#b3826a"></span>Events</label>
+  </div>
+  <div class="map-empty" id="mapEmpty" style="display:none;">
+    <h2>No places pinned yet</h2>
+    <p>Open someone on the Tree, expand <strong>Places</strong>, and add where they lived, married, worked, studied, or are buried.</p>
+  </div>
+</div>
+
+<div id="searchHost"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/auth-shared.js"></script>
+<script src="js/map.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
