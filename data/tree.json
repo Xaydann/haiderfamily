@@ -1,0 +1,2402 @@
+{
+    "title": "Haider Family Tree",
+    "subtitle": "a quiet record of who belongs to whom",
+    "people": [
+        {
+            "id": 1,
+            "name": "Syed Altaf Hussain",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 2,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "Pakistan",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 2,
+            "name": "Sajida Begum",
+            "photo": "/uploads/img_20260802_193803_b8cedd23.jpeg",
+            "parents": [],
+            "partners": [
+                {
+                    "id": 1,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "Pakistan",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 3,
+            "name": "Iqbal",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 17,
+                    "status": "married"
+                }
+            ],
+            "dob": "1938-02-20",
+            "dod": "2021-06-02",
+            "ethnicity": "Pakistani",
+            "location": "Cambridge",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 5,
+            "name": "Shameem",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 18,
+                    "status": "married"
+                }
+            ],
+            "dob": "1939-01-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "Change bday",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 6,
+            "name": "Islam",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 19,
+                    "status": "married"
+                }
+            ],
+            "dob": "1941-01-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "Change bday",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 9,
+            "name": "Ikram",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 20,
+                    "status": "married"
+                }
+            ],
+            "dob": "1945-09-05",
+            "dod": "2020-06-02",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 10,
+            "name": "Sumsam Haider",
+            "photo": "/uploads/img_20260806_045123_ed563362.jpg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 21,
+                    "status": "married"
+                }
+            ],
+            "dob": "1948-09-04",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "deceased": false,
+            "nickname": "",
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 11,
+            "name": "Intasham",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 22,
+                    "status": "married"
+                }
+            ],
+            "dob": "1949-09-04",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 12,
+            "name": "Inam",
+            "photo": null,
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 23,
+                    "status": "married"
+                }
+            ],
+            "dob": "1953-08-05",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 13,
+            "name": "Sarfraz",
+            "photo": "/uploads/img_20260806_045252_15d61d29.jpg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 24,
+                    "status": "married"
+                }
+            ],
+            "dob": "1956-06-08",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "nickname": "Raja",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "deceased": false,
+            "linkedFamily": null,
+            "places": []
+        },
+        {
+            "id": 14,
+            "name": "Tanveer",
+            "photo": "/uploads/img_20260806_045220_544e0ce3.jpg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 25,
+                    "status": "married"
+                }
+            ],
+            "dob": "1953-01-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "Birthday",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "nickname": "Tanu",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "deceased": false,
+            "linkedFamily": null,
+            "places": []
+        },
+        {
+            "id": 15,
+            "name": "Taqueer",
+            "photo": "/uploads/img_20260806_045317_ebcbe804.jpg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 26,
+                    "status": "married"
+                }
+            ],
+            "dob": "1961-08-04",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "nickname": "Papu",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "deceased": false,
+            "linkedFamily": null,
+            "places": []
+        },
+        {
+            "id": 16,
+            "name": "Shabana",
+            "photo": "/uploads/img_20260806_045353_85870529.jpg",
+            "parents": [
+                1,
+                2
+            ],
+            "partners": [
+                {
+                    "id": 27,
+                    "status": "married"
+                }
+            ],
+            "dob": "1962-08-17",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "deceased": false,
+            "nickname": "",
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 17,
+            "name": "Surayia",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 3,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 18,
+            "name": "Aftab",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 5,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 19,
+            "name": "Dawn",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 6,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 20,
+            "name": "Seema Ikram",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 9,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 21,
+            "name": "Mobina Haider",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 10,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 22,
+            "name": "Seema Intasham",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 11,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 23,
+            "name": "Fatima",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 12,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 24,
+            "name": "Saima",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 13,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 25,
+            "name": "Yasmine",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 14,
+                    "status": "married"
+                }
+            ],
+            "dob": "1953-06-07",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false
+        },
+        {
+            "id": 26,
+            "name": "Rubina",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 15,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 27,
+            "name": "Ather",
+            "photo": "/uploads/img_20260806_045418_5161c3d7.jpg",
+            "parents": [],
+            "partners": [
+                {
+                    "id": 16,
+                    "status": "married"
+                }
+            ],
+            "dob": "1962-10-25",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "deceased": false,
+            "nickname": "",
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 28,
+            "name": "Adnan",
+            "photo": null,
+            "parents": [
+                3,
+                17
+            ],
+            "partners": [
+                {
+                    "id": 68,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 29,
+            "name": "Sabah",
+            "photo": null,
+            "parents": [
+                3,
+                17
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 30,
+            "name": "Tooba",
+            "photo": null,
+            "parents": [
+                3,
+                17
+            ],
+            "partners": [
+                {
+                    "id": 69,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 31,
+            "name": "Seema",
+            "photo": null,
+            "parents": [
+                5,
+                18
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 32,
+            "name": "Hussain",
+            "photo": null,
+            "parents": [
+                5,
+                18
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 33,
+            "name": "Abass",
+            "photo": null,
+            "parents": [
+                5,
+                18
+            ],
+            "partners": [
+                {
+                    "id": 127,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 34,
+            "name": "Athia",
+            "photo": null,
+            "parents": [
+                5,
+                18
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 35,
+            "name": "Shawn",
+            "photo": null,
+            "parents": [
+                19,
+                6
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 36,
+            "name": "Ryan",
+            "photo": null,
+            "parents": [
+                19,
+                6
+            ],
+            "partners": [
+                {
+                    "id": 77,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 37,
+            "name": "Raza",
+            "photo": null,
+            "parents": [
+                20,
+                9
+            ],
+            "partners": [
+                {
+                    "id": 85,
+                    "status": "divorced"
+                },
+                {
+                    "id": 123,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "Have to add meillie",
+            "gallery": []
+        },
+        {
+            "id": 38,
+            "name": "Fatima",
+            "photo": null,
+            "parents": [
+                20,
+                9
+            ],
+            "partners": [
+                {
+                    "id": 121,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 39,
+            "name": "Zehra",
+            "photo": null,
+            "parents": [
+                20,
+                9
+            ],
+            "partners": [
+                {
+                    "id": 118,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 40,
+            "name": "Ali",
+            "photo": null,
+            "parents": [
+                21,
+                10
+            ],
+            "partners": [],
+            "dob": "1973-10-11",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 41,
+            "name": "Syed Mohammed Haider",
+            "photo": "/uploads/img_20260801_202311_9127b0b9.jpeg",
+            "parents": [
+                21,
+                10
+            ],
+            "partners": [
+                {
+                    "id": 66,
+                    "status": "married"
+                }
+            ],
+            "dob": "1975-07-13",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "Ottawa",
+            "bio": "",
+            "gallery": [
+                "/uploads/img_20260801_202215_c4c63310.jpeg"
+            ],
+            "birthplace": "",
+            "locked": false,
+            "nickname": "Mo",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": [
+                {
+                    "kind": "married",
+                    "name": "Ottawa Orleans",
+                    "year": "2000",
+                    "note": "",
+                    "lat": 45.46536540000000314876160700805485248565673828125,
+                    "lng": -75.5035342999999983248926582746207714080810546875
+                }
+            ],
+            "deceased": false
+        },
+        {
+            "id": 42,
+            "name": "Sabina",
+            "photo": null,
+            "parents": [
+                21,
+                10
+            ],
+            "partners": [
+                {
+                    "id": 105,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 43,
+            "name": "Nooreen",
+            "photo": null,
+            "parents": [
+                21,
+                10
+            ],
+            "partners": [
+                {
+                    "id": 109,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 44,
+            "name": "Shanzay",
+            "photo": null,
+            "parents": [
+                13,
+                24
+            ],
+            "partners": [
+                {
+                    "id": 47,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 45,
+            "name": "Hassan",
+            "photo": null,
+            "parents": [
+                24,
+                13
+            ],
+            "partners": [
+                {
+                    "id": 48,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 46,
+            "name": "Aliha",
+            "photo": null,
+            "parents": [
+                13,
+                24
+            ],
+            "partners": [
+                {
+                    "id": 96,
+                    "status": "partner"
+                }
+            ],
+            "dob": "2002-04-06",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "United States",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 47,
+            "name": "Jaan",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 44,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "Pakistani",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 48,
+            "name": "Zartasha",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 45,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 49,
+            "name": "Ali Hamza",
+            "photo": null,
+            "parents": [
+                44,
+                47
+            ],
+            "partners": [],
+            "dob": "2020-10-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 50,
+            "name": "Zahra",
+            "photo": null,
+            "parents": [
+                44,
+                47
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 51,
+            "name": "Zain",
+            "photo": null,
+            "parents": [
+                44,
+                47
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 52,
+            "name": "Abbas",
+            "photo": null,
+            "parents": [
+                45,
+                48
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 53,
+            "name": "Batoul",
+            "photo": null,
+            "parents": [
+                16,
+                27
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 54,
+            "name": "Haider",
+            "photo": null,
+            "parents": [
+                16,
+                27
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 55,
+            "name": "Ali",
+            "photo": null,
+            "parents": [
+                15,
+                26
+            ],
+            "partners": [
+                {
+                    "id": 114,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 56,
+            "name": "Aliyzeh",
+            "photo": null,
+            "parents": [
+                15,
+                26
+            ],
+            "partners": [
+                {
+                    "id": 116,
+                    "status": "divorced"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 57,
+            "name": "Ammar",
+            "photo": null,
+            "parents": [
+                15,
+                26
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 58,
+            "name": "Husnan",
+            "photo": null,
+            "parents": [
+                14
+            ],
+            "partners": [
+                {
+                    "id": 112,
+                    "status": "partner"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 60,
+            "name": "Hammad",
+            "photo": null,
+            "parents": [
+                23,
+                12
+            ],
+            "partners": [
+                {
+                    "id": 97,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 61,
+            "name": "Ibad",
+            "photo": null,
+            "parents": [
+                23,
+                12
+            ],
+            "partners": [
+                {
+                    "id": 98,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 66,
+            "name": "Seema Khan Haider",
+            "photo": "/uploads/img_20260806_045048_0847190a.jpg",
+            "parents": [],
+            "partners": [
+                {
+                    "id": 41,
+                    "status": "married"
+                }
+            ],
+            "dob": "1975-07-21",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "locked": false,
+            "deceased": false,
+            "nickname": "",
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": [
+                {
+                    "kind": "married",
+                    "name": "Ottawa Orleans",
+                    "year": "2000",
+                    "note": "",
+                    "lat": 45.46536540000000314876160700805485248565673828125,
+                    "lng": -75.5035342999999983248926582746207714080810546875
+                }
+            ],
+            "linkedFamily": {
+                "slug": "the-khan-family",
+                "personId": 2
+            }
+        },
+        {
+            "id": 67,
+            "name": "Zayna Haider",
+            "photo": "/uploads/img_20260802_044321_c59f65a2.jpeg",
+            "parents": [
+                41,
+                66
+            ],
+            "partners": [],
+            "dob": "2002-07-03",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [
+                "/uploads/img_20260805_234615_efa1bb38.jpg"
+            ],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 68,
+            "name": "Nudrat",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 28,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 69,
+            "name": "Amjad",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 30,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 70,
+            "name": "Taha",
+            "photo": null,
+            "parents": [
+                28,
+                68
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 71,
+            "name": "Zahra",
+            "photo": null,
+            "parents": [
+                28,
+                68
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 72,
+            "name": "Zainab",
+            "photo": null,
+            "parents": [
+                28,
+                68
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "Jimmy",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 73,
+            "name": "Mariam",
+            "photo": null,
+            "parents": [
+                28,
+                68
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "Mimi",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 74,
+            "name": "Tayyab",
+            "photo": null,
+            "parents": [
+                28,
+                68
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 75,
+            "name": "Johara",
+            "photo": null,
+            "parents": [
+                30,
+                69
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "Jojo",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 76,
+            "name": "Bisma",
+            "photo": null,
+            "parents": [
+                30,
+                69
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 77,
+            "name": "Lindsey",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 36,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 78,
+            "name": "Aliyah",
+            "photo": null,
+            "parents": [
+                36,
+                77
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 79,
+            "name": "Unsa",
+            "photo": null,
+            "parents": [
+                31
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 80,
+            "name": "Aida",
+            "photo": null,
+            "parents": [
+                31
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 81,
+            "name": "Huzama",
+            "photo": null,
+            "parents": [
+                31
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 83,
+            "name": "Dua",
+            "photo": null,
+            "parents": [
+                34
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 84,
+            "name": "Alishba",
+            "photo": null,
+            "parents": [
+                34
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 85,
+            "name": "Erej",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 37,
+                    "status": "divorced"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 89,
+            "name": "Maha",
+            "photo": null,
+            "parents": [
+                37,
+                85
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 93,
+            "name": "Kayan Haider",
+            "photo": "/uploads/img_20260802_044340_6693fae2.jpeg",
+            "parents": [
+                41,
+                66
+            ],
+            "partners": [],
+            "dob": "2004-11-08",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 94,
+            "name": "Xaydan Haider",
+            "photo": "/uploads/img_20260802_044410_6697f882.jpeg",
+            "parents": [
+                41,
+                66
+            ],
+            "partners": [],
+            "dob": "2007-04-21",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "birthplace": "",
+            "nickname": "Naan",
+            "locked": false,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "deceased": false,
+            "linkedFamily": null,
+            "places": []
+        },
+        {
+            "id": 95,
+            "name": "Eysa Haider",
+            "photo": "/uploads/img_20260802_044439_54a16eb6.jpeg",
+            "parents": [
+                41,
+                66
+            ],
+            "partners": [],
+            "dob": "2010-12-01",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "deceased": false,
+            "birthplace": "",
+            "nickname": "",
+            "locked": false,
+            "linkedFamily": null,
+            "capsule": {
+                "traits": [],
+                "quotes": [],
+                "hobbies": [],
+                "songs": [],
+                "voice": [],
+                "videos": [],
+                "recipes": [],
+                "handwriting": [],
+                "documents": []
+            },
+            "places": []
+        },
+        {
+            "id": 96,
+            "name": "Jackson",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 46,
+                    "status": "partner"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 97,
+            "name": "Aqdas",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 60,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 98,
+            "name": "Naina",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 61,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 99,
+            "name": "Zinnia",
+            "photo": null,
+            "parents": [
+                60,
+                97
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 100,
+            "name": "Anoushe",
+            "photo": null,
+            "parents": [
+                97,
+                60
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 101,
+            "name": "Yacoub",
+            "photo": null,
+            "parents": [
+                61,
+                98
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 102,
+            "name": "Rehma",
+            "photo": null,
+            "parents": [
+                61,
+                98
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 103,
+            "name": "Haya",
+            "photo": null,
+            "parents": [
+                61,
+                98
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 104,
+            "name": "Naema",
+            "photo": null,
+            "parents": [
+                61,
+                98
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 105,
+            "name": "Shabhaz",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 42,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 106,
+            "name": "Musa",
+            "photo": null,
+            "parents": [
+                42,
+                105
+            ],
+            "partners": [],
+            "dob": "2008-05-28",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 107,
+            "name": "Rania",
+            "photo": null,
+            "parents": [
+                42,
+                105
+            ],
+            "partners": [],
+            "dob": "2012-02-23",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 108,
+            "name": "Haider",
+            "photo": null,
+            "parents": [
+                42,
+                105
+            ],
+            "partners": [],
+            "dob": "2015-01-04",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 109,
+            "name": "Faraz",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 43,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 110,
+            "name": "Nadal",
+            "photo": null,
+            "parents": [
+                43,
+                109
+            ],
+            "partners": [],
+            "dob": "2018-10-13",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 111,
+            "name": "Naya",
+            "photo": null,
+            "parents": [
+                43,
+                109
+            ],
+            "partners": [],
+            "dob": "2021-07-07",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 112,
+            "name": "Gaby",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 58,
+                    "status": "partner"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 114,
+            "name": "Arianna",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 55,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 115,
+            "name": "Azariyah",
+            "photo": null,
+            "parents": [
+                55,
+                114
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 116,
+            "name": "Nabeel",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 56,
+                    "status": "divorced"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 117,
+            "name": "Zion",
+            "photo": null,
+            "parents": [
+                56,
+                116
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 118,
+            "name": "JD",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 39,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 119,
+            "name": "Zeina",
+            "photo": null,
+            "parents": [
+                39,
+                118
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 120,
+            "name": "Alizeh",
+            "photo": null,
+            "parents": [
+                39,
+                118
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 121,
+            "name": "Ayaz",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 38,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": []
+        },
+        {
+            "id": 123,
+            "name": "Mellie",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 37,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 124,
+            "name": "Kumail",
+            "photo": null,
+            "parents": [
+                11,
+                22
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 125,
+            "name": "Sabeen",
+            "photo": null,
+            "parents": [
+                11,
+                22
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 126,
+            "name": "Faraz",
+            "photo": null,
+            "parents": [
+                11,
+                22
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 127,
+            "name": "Mariam?",
+            "photo": null,
+            "parents": [],
+            "partners": [
+                {
+                    "id": 33,
+                    "status": "married"
+                }
+            ],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 128,
+            "name": "Hadi",
+            "photo": null,
+            "parents": [
+                127,
+                33
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 129,
+            "name": "Sister?",
+            "photo": null,
+            "parents": [
+                33,
+                127
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 130,
+            "name": "Brother?",
+            "photo": null,
+            "parents": [
+                33,
+                127
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 131,
+            "name": "SIster?",
+            "photo": null,
+            "parents": [
+                33,
+                127
+            ],
+            "partners": [],
+            "dob": "",
+            "dod": "",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        },
+        {
+            "id": 132,
+            "name": "Mohammed's Twin Brother",
+            "photo": null,
+            "parents": [
+                10,
+                21
+            ],
+            "partners": [],
+            "dob": "1975-07-13",
+            "dod": "1975-07-15",
+            "birthplace": "",
+            "ethnicity": "",
+            "location": "",
+            "bio": "",
+            "gallery": [],
+            "locked": false
+        }
+    ],
+    "events": [
+        {
+            "id": "ev_1785987877571_c1ws3x7qun",
+            "title": "Made this family tree.",
+            "date": "2026-07-31",
+            "description": "",
+            "people": [
+                94
+            ],
+            "place": "",
+            "lat": null,
+            "lng": null
+        }
+    ],
+    "nextId": 133
+}
